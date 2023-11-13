@@ -84,7 +84,7 @@ conda activate mask3d_cuda113
 pip3 install "cython<3.0.0" && pip install --no-build-isolation pyyaml==5.4.1
 pip3 install -r req.txt
 
-pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -extra-index-url https://download.pytorch.org/whl/cu113 
+pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113 
 pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.12.1+cu113.html 
 pip3 install 'git+https://github.com/facebookresearch/detectron2.git@710e7795d0eeadf9def0e7ef957eea13532e34cf' --no-deps
 mkdir third_party 
@@ -93,9 +93,13 @@ cd third_party
 git clone --recursive "https://github.com/NVIDIA/MinkowskiEngine" 
 cd MinkowskiEngine 
 git checkout 02fc608bea4c0549b0a7b00ca1bf15dee4a0b228
-export MAX_JOBS=1
 python setup.py install --force_cuda --blas=openblas
+```
 
+The installation of the MinkowskiEngine might not work and throw a error.
+
+
+```
 cd .. 
 git clone https://github.com/ScanNet/ScanNet.git 
 cd ScanNet/Segmentator 
@@ -113,11 +117,14 @@ Install for vizualization
 pip install pyntcloud
 ```
 
-If there is an error about torchmetrics:
+If there is an error about torchmetrics
 ```
 pip3 install torchmetrics==0.11.4
 ```
 
+## Running the model
+
+First, download the Synthetic data
 Now prepare data  
 Make sure that both test data and training data are downloaded and put in the appropriate folders after creating them (data/raw/stpls3d/    train-test-validation) file 1-24 in train, 24-25 in validation, 26 in test  
 
