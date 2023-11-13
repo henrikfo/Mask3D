@@ -70,7 +70,7 @@ sudo apt --purge remove "*nvidia*" "libxnvctrl*"
 sudo apt install nvidia-driver-470
 ```
 
-Installing mask3d:
+## Installing mask3d:
 ```
 apt-get install libopenblas-dev
 export TORCH_CUDA_ARCH_LIST=”6.0 6.1 6.2 7.0 7.2 7.5 8.0 8.6”
