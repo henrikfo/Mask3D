@@ -35,7 +35,7 @@ cuda: 11.3
 
 #### Please, do install these in a save enviorment (i.e. a docker container), to not ruin your other projects. And these install instructions is what worked for me, they might not for you.
 
-Install conda:
+Install conda
 ```
 Download from https://docs.conda.io/projects/miniconda/en/latest/
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -70,10 +70,10 @@ sudo apt --purge remove "*nvidia*" "libxnvctrl*"
 sudo apt install nvidia-driver-470
 ```
 
-## Installing mask3d:
+## Installing mask3d
 ```
 apt-get install libopenblas-dev
-export TORCH_CUDA_ARCH_LIST=”6.0 6.1 6.2 7.0 7.2 7.5 8.0 8.6”
+export TORCH_CUDA_ARCH_LIST="6.0 6.1 6.2 7.0 7.2 7.5 8.0 8.6"
 ```
 Remove/comment pip packages in enviorment.yaml  
 Create a req.txt with all pip packages that would have been installed from eviorment.yaml  
@@ -82,11 +82,11 @@ conda env create -f environment.yml
 conda activate mask3d_cuda113 
 
 pip3 install "cython<3.0.0" && pip install --no-build-isolation pyyaml==5.4.1
-pip3 install –r req.txt
+pip3 install -r req.txt
 
-pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 –extra-index-url https://download.pytorch.org/whl/cu113 
+pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -extra-index-url https://download.pytorch.org/whl/cu113 
 pip3 install torch-scatter -f https://data.pyg.org/whl/torch-1.12.1+cu113.html 
-pip3 install 'git+https://github.com/facebookresearch/detectron2.git@710e7795d0eeadf9def0e7ef957eea13532e34cf’ --no-deps 
+pip3 install 'git+https://github.com/facebookresearch/detectron2.git@710e7795d0eeadf9def0e7ef957eea13532e34cf' --no-deps
 mkdir third_party 
 cd third_party
 
@@ -108,6 +108,11 @@ cd ../../
 pip3 install pytorch-lightning==1.7.2
 ```
 
+Install for vizualization
+```
+pip install pyntcloud
+```
+
 If there is an error about torchmetrics:
 ```
 pip3 install torchmetrics==0.11.4
@@ -125,11 +130,12 @@ python -m datasets.preprocessing.stpls3d_preprocessing preprocess \
 
 ## Visualization of results.
 The code has been modified to be able to save visualization in two ways instead of one.  
-You can use pyviz3d as the repo does, or pyntcloud   
-```
-pip install pyntcloud
-```
-and then use what ever 3d software you want to.  
+You can use pyviz3d as the repo does, or a general 3D visualization program like CloudCompare.  
+  
 
 
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
+
+Papers for this work(model and data)
+
+And other papers of interest
