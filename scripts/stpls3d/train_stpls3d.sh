@@ -8,7 +8,7 @@ CURR_SIZE=54
 CURR_THRESHOLD=0.01
 
 python main_instance_segmentation.py \
-general.experiment_name="my_training_5" \
+general.experiment_name="my_training_05" \
 general.project_name="stpls3d" \
 data/datasets=stpls3d \
 general.num_targets=15 \
