@@ -127,32 +127,36 @@ pip3 install torchmetrics==0.11.4
 
 ## Running the model
 
-First, download the Synthetic data from <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0jsHw4Q6FFB6AjEgTkF2tgHdMMFyLjC-7fDHrmV01Kci0aA/viewform">STPLS3D</a>  
-Make sure that the data is put in the appropriate folders after creating them (data/raw/stpls3d/    train-test-validation) file 1-24 in train, 24-25 in validation, 26 in test if you did download that too  
+First, download the Synthetic Instance data from <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0jsHw4Q6FFB6AjEgTkF2tgHdMMFyLjC-7fDHrmV01Kci0aA/viewform">STPLS3D</a>  
+Make sure that the data is put in the appropriate folders after creating them (data/raw/stpls3d/    train-validation) file 1-24 in train, 24-25 in validation  
 
-Then run the following to prepare the data
+Then run the following to prepare the data  
 ```
 python -m datasets.preprocessing.stpls3d_preprocessing preprocess \
  --data_dir="data/raw/stpls3d" \
  --save_dir="data/processed/stpls3d"
 ```
 
-When the data has been prepared, run the script
+When the data has been prepared, run the script  
 ```
 python scripts/stpls3d/train_stpls3d.sh
 ```
-to train a model. Run the test script for validation results and vizualisations to be saved.
+to train a model. Run the test script for validation results and vizualisations to be saved.  
 
-Edit the scripts for appropriate needs. Increase the batch size and lower the voxel size when large amout of vRAM is available.
+Edit the scripts for appropriate needs. Increase the batch size and lower the voxel size when large amout of vRAM is available.  
 
 ## Visualization of results.
 The code has been modified to be able to save visualization in two ways instead of one.  
 You can use pyviz3d as the repo does, or a general 3D visualization program like CloudCompare.  
-  
+In CloudCompare you might need to change the cloud point size from Default to be able to see the points (i.e. 10)
 
+![Segmentation](https://github.com/henrikfo/Mask3D/blob/main/docs/pred_sem_crop.png)
+![Instance](https://github.com/henrikfo/Mask3D/blob/main/docs/pred_instance_crop.png)
 
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
 
 Papers for this work(model and data)
+<a href="">Mask3D</a>
+<a href="">STPLS3D</a>
 
 And other papers of interest
