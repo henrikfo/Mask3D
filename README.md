@@ -97,7 +97,10 @@ python setup.py install --force_cuda --blas=openblas
 ```
 
 The installation of the MinkowskiEngine might not work and throw a error.
-
+If that happens do
+```
+export MAX_JOBS=1
+```
 
 ```
 cd .. 
@@ -124,16 +127,23 @@ pip3 install torchmetrics==0.11.4
 
 ## Running the model
 
-First, download the Synthetic data
-Now prepare data  
-Make sure that both test data and training data are downloaded and put in the appropriate folders after creating them (data/raw/stpls3d/    train-test-validation) file 1-24 in train, 24-25 in validation, 26 in test  
+First, download the Synthetic data from <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0jsHw4Q6FFB6AjEgTkF2tgHdMMFyLjC-7fDHrmV01Kci0aA/viewform">STPLS3D</a>  
+Make sure that the data is put in the appropriate folders after creating them (data/raw/stpls3d/    train-test-validation) file 1-24 in train, 24-25 in validation, 26 in test if you did download that too  
 
-Run:
+Then run the following to prepare the data
 ```
 python -m datasets.preprocessing.stpls3d_preprocessing preprocess \
  --data_dir="data/raw/stpls3d" \
  --save_dir="data/processed/stpls3d"
 ```
+
+When the data has been prepared, run the script
+```
+python scripts/stpls3d/train_stpls3d.sh
+```
+to train a model. Run the test script for validation results and vizualisations to be saved.
+
+Edit the scripts for appropriate needs. Increase the batch size and lower the voxel size when large amout of vRAM is available.
 
 ## Visualization of results.
 The code has been modified to be able to save visualization in two ways instead of one.  
