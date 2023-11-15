@@ -150,7 +150,7 @@ for validation results and vizualisations to be saved.
 
 Edit the scripts for appropriate needs.  
 Increase the batch size and lower the voxel size when large amout of vRAM is available.  
-Minimum requirements to run this uinedited scripts
+Minimum requirements to run this unedited scripts
 ```
 ~ 20 GB RAM
 ~ 12 GB vRAM
@@ -165,8 +165,11 @@ For pyviz3d, set verbose in visualizer.save() to True for instructions on how to
 With CloudCompare, use the .ply files saved in /saved/"*project*"/visualizations/"*crop*"/  
 In CloudCompareuse you might need to change the cloud point size from Default to be able to see the points (i.e. 10)  
 
-This below is some of the 
+This below is some of the visual results achieved in this implementation
 ![Visual results](https://github.com/henrikfo/Mask3D/blob/main/docs/results.png)  
+
+| AP | AP_50 | AP_25 |
+| 57.3 | 74.3 | 81.6 |
 
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
 
