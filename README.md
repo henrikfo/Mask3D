@@ -150,8 +150,7 @@ The code has been modified to be able to save visualization in two ways instead 
 You can use pyviz3d as the repo does, or a general 3D visualization program like CloudCompare.  
 In CloudCompare you might need to change the cloud point size from Default to be able to see the points (i.e. 10)
 
-![Segmentation](https://github.com/henrikfo/Mask3D/blob/main/docs/pred_sem_crop.png)
-![Instance](https://github.com/henrikfo/Mask3D/blob/main/docs/pred_instance_crop.png)
+![Visual results](https://github.com/henrikfo/Mask3D/blob/main/docs/results.png)
 
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
 
