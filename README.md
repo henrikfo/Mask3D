@@ -168,12 +168,17 @@ In CloudCompareuse you might need to change the cloud point size from Default to
 This below is some of the visual results achieved in this implementation
 ![Visual results](https://github.com/henrikfo/Mask3D/blob/main/docs/results.png)  
 
-$\vec{v} = 
-\begin{bmatrix}
 | AP | AP_50 | AP_25 |  
-| 57.3 | 74.3 | 81.6 |
-\end{bmatrix}
-$
+| 57.3 | 74.3 | 81.6 |  
+
+### [STPLS3D](https://www.stpls3d.com/)
+
+| Dataset | AP | AP_50 | AP_25 | Config | Checkpoint :floppy_disk: | Scores :chart_with_upwards_trend: | Visualizations :telescope:
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| STPLS3D val | 57.3 | 74.3 | 81.6 | [config](scripts/stpls3d/stpls3d_val.sh) | [checkpoint](https://omnomnom.vision.rwth-aachen.de/data/mask3d/checkpoints/stpls3d/stpls3d_val.ckpt) | [scores](./docs/detailed_scores/stpls3d.txt) | [visualizations](https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/)
+| STPLS3D test | 63.4 | 79.2 | 85.6 | [config](scripts/stpls3d/stpls3d_benchmark.sh) | [checkpoint](https://omnomnom.vision.rwth-aachen.de/data/mask3d/checkpoints/stpls3d/stpls3d_benchmark.zip) | [scores](https://codalab.lisn.upsaclay.fr/competitions/4646#results) | visualizations
+
+
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
 
 Papers for this work(model and data)
