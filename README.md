@@ -97,7 +97,7 @@ python setup.py install --force_cuda --blas=openblas
 ```
 
 The installation of the MinkowskiEngine might not work and throw a error.
-If that happens do
+If that happens try
 ```
 export MAX_JOBS=1
 ```
