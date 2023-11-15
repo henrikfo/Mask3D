@@ -151,7 +151,7 @@ You can use pyviz3d as the repo does, or a general 3D visualization program like
 
 For pyviz3d, set verbose in visualizer.save() to True for instructions on how to use it. (Found on line 105 in /utils/pc_visualizations.py)  
 
-With CloudCompare, use the .ply files saved in /saved/*project*/visualizations/*crop*/  
+With CloudCompare, use the .ply files saved in /saved/"*project*"/visualizations/"*crop*"/  
 In CloudCompareuse you might need to change the cloud point size from Default to be able to see the points (i.e. 10)  
 
 
