@@ -178,10 +178,10 @@ Using the metric of mean average precision we achieved similar results to the au
 
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
 
-Papers for this work(model and data)  
+Papers for this work  
 <a href="https://arxiv.org/abs/2210.03105">Mask3D</a>  
 <a href="https://arxiv.org/abs/2203.09065">STPLS3D</a>  
 
 And other papers and repos of interest  
-<a href="https://arxiv.org/abs/2309.16375">Tree detection with point clouds, a review</a>  
-<a href="https://github.com/murtiad/Tree_segmentation-using_PointNet/tree/main">Urban segmentation using PointNet++</a>  
+<a href="https://arxiv.org/abs/2309.16375">Tree detection with point clouds, a review (paper) </a>  
+<a href="https://github.com/murtiad/Tree_segmentation-using_PointNet/tree/main">Urban segmentation using PointNet++ (repo)</a>  
