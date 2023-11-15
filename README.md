@@ -148,9 +148,14 @@ Edit the scripts for appropriate needs. Increase the batch size and lower the vo
 ## Visualization of results.
 The code has been modified to be able to save visualization in two ways instead of one.  
 You can use pyviz3d as the repo does, or a general 3D visualization program like CloudCompare.  
-In CloudCompare you might need to change the cloud point size from Default to be able to see the points (i.e. 10)
 
-![Visual results](https://github.com/henrikfo/Mask3D/blob/main/docs/results.png)
+For pyviz3d, set verbose in visualizer.save() to True for instructions on how to use it. (Found on line 105 in /utils/pc_visualizations.py)  
+
+With CloudCompare, use the .ply files saved in /saved/*project*/visualizations/*crop*/  
+In CloudCompareuse you might need to change the cloud point size from Default to be able to see the points (i.e. 10)  
+
+
+![Visual results](https://github.com/henrikfo/Mask3D/blob/main/docs/results.png)  
 
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
 
