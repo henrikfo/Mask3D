@@ -168,8 +168,11 @@ In CloudCompareuse you might need to change the cloud point size from Default to
 This below is some of the visual results achieved in this implementation
 ![Visual results](https://github.com/henrikfo/Mask3D/blob/main/docs/results.png)  
 
+\vec{v} = 
+\begin{bmatrix}
 | AP | AP_50 | AP_25 |  
 | 57.3 | 74.3 | 81.6 |
+ \end{bmatrix}
 
 Checkout the <a href="https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/stpls3d/">visualizations</a> provided by Mask3D.
 
