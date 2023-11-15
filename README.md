@@ -150,7 +150,7 @@ for validation results and vizualisations to be saved.
 
 Edit the scripts for appropriate needs.  
 Increase the batch size and lower the voxel size when large amout of vRAM is available.  
-Minimum requirements to run this unedited scripts
+Minimum requirements to run these unedited scripts
 ```
 ~ 20 GB RAM
 ~ 12 GB vRAM
