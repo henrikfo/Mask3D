@@ -128,7 +128,7 @@ pip3 install torchmetrics==0.11.4
 ## Running the model
 
 First, download the Synthetic Instance data from <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0jsHw4Q6FFB6AjEgTkF2tgHdMMFyLjC-7fDHrmV01Kci0aA/viewform">STPLS3D</a>  
-Make sure that the data is put in the appropriate folders after creating them (data/raw/stpls3d/    train-validation) file 1-24 in train, 24-25 in validation  
+Make sure that the data is put in the appropriate folders after creating them (data/raw/stpls3d/    train-validation) file 1-23 in train, 24-25 in validation  
 
 Then run the following to prepare the data  
 ```
